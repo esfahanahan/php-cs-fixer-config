@@ -1,0 +1,36 @@
+{
+    "name": "esfahanahan/php-cs-fixer-config",
+    "description": "Prebuilt PHP CS Fixer configuration for EsfahanAhan projects",
+    "license": "MIT",
+    "keywords": [
+        "dev",
+        "php-cs-fixer"
+    ],
+    "authors": [
+        {
+            "role": "Owner",
+            "name": "Esfahan Ahan Apadana",
+            "email": "dev@esfahanahan.com",
+            "homepage": "https://esfahanahan.com"
+        },
+        {
+            "role": "Maintainer",
+            "name": "Hossein Hosni",
+            "email": "hosni.hossein@gmail.com",
+            "homepage": "https://github.com/hosni"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "friendsofphp/php-cs-fixer": "^3.87"
+    },
+    "autoload": {
+        "psr-4": {
+            "EsfahanAhan\\PhpCsFixer\\": "src"
+        }
+    },
+    "scripts": {
+        "check-linting": "vendor/bin/php-cs-fixer fix --dry-run -vvv",
+        "lint": "php-cs-fixer fix"
+    }
+}
